@@ -9,9 +9,7 @@ def reverseWords(s:str):
 
 	return(s)
 
-
-
-word = 'a good   example'
+#word = 'a good   example'
 word = 'hello world!'
 
 reverseWords(word)
