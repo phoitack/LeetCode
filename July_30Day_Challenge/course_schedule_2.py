@@ -16,17 +16,17 @@ def findOrder(numCourses, prerequisites):
 
         flat_list = sorted(list(set(flat_list)))
 
-        #flat_list = set(list(itertools.combinations(flat_list,numCourses)))
+        flat_list = set(list(itertools.combinations(flat_list,numCourses)))
 
-        #return (sorted(list(set(flat_list))))
+        return (sorted(list(set(flat_list))))
         return (flat_list)
     
     
     
-n = 4
-prereq = [[1, 0], [2, 0], [3, 1], [3, 2]]
+#n = 4
+#prereq = [[1, 0], [2, 0], [3, 1], [3, 2]]
 
-#n = 2
-#prereq = []
+n = 2
+prereq = []
 
 print(findOrder(n, prereq))
