@@ -10,11 +10,13 @@ def singleNumber(nums):
 
     s = Counter(nums)
 
-    my_list = []
+    my_list = [k for k,v in s.items() if v == 1]
 
-    for key, value in s.items():
-        if value == 1:
-            my_list.append(key)
+    #[]
+
+    #for key, value in s.items():
+    #    if value == 1:
+    #        my_list.append(key)
 
 
     return (my_list)
